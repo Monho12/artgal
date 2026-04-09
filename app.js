@@ -1,18 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
-    <title>Artgal</title>
-    <script src="./header.js" type="module">
-      import { Header } from  "./components/header.js";
-      document.getElementById('header').innerHTML = Header();
-    </script>
-  </head>
-  <body>
-    <div id="header"></div>
-    <main class="main-container">
+import { Header } from "./components/header.js";
+
+export default function App() {
+    return
+    `<header id="main-header">${Header()}</header>
+        <main class="main-container">
       <h1>The Collection</h1>
       <p>
         Explore our collection of artworks, connect with artists, and share your
@@ -36,5 +27,5 @@
     <!-- <footer>
       <p>&copy; 2024 Artgal. All rights reserved.</p>
     </footer> -->
-  </body>
-</html>
+`
+}
