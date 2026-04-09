@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-import Header from "./components/header/header.js";
-=======
 import { Footer } from "./components/footer/footer.js";
-import Header from "./components/header.js";
->>>>>>> 585d2ce81925b679f707ccd4cc7b0cc5b216e92b
+import Header from "./components//header/header.js";
 
 export default function App() {
-  return /*html*/ `${Header()}
+  return `<header id="main-header">${Header()}</header>
         <main class="main-container">
       <h1>The Collection</h1>
       <p>
