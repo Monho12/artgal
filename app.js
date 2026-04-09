@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import Header from "./components/header/header.js";
+=======
+import { Footer } from "./components/footer/footer.js";
+import Header from "./components/header.js";
+>>>>>>> 585d2ce81925b679f707ccd4cc7b0cc5b216e92b
 
 export default function App() {
   return /*html*/ `${Header()}
@@ -23,9 +28,7 @@ export default function App() {
         </fieldset>
       </section>
     </main>
-    <!-- <footer>
-      <p>&copy; 2024 Artgal. All rights reserved.</p>
-    </footer> -->
+    ${Footer()}
 `
 }
 
