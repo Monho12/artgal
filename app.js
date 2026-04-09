@@ -1,8 +1,9 @@
+
 import { Footer } from "./components/footer/footer.js";
-import Header from "./components//header/header.js";
+import Header from "./components/header/header.js";
 
 export default function App() {
-  return `<header id="main-header">${Header()}</header>
+  return `${Header()}
         <main class="main-container">
       <h1>The Collection</h1>
       <p>
