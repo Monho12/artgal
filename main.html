@@ -5,36 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
     <title>Artgal</title>
-    <script src="./header.js" type="module">
-      import { Header } from  "./components/header.js";
-      document.getElementById('header').innerHTML = Header();
-    </script>
   </head>
   <body>
-    <div id="header"></div>
-    <main class="main-container">
-      <h1>The Collection</h1>
-      <p>
-        Explore our collection of artworks, connect with artists, and share your
-        own creations.
-      </p>
-
-      <section class="gallery">
-        <h4>Category</h4>
-        <fieldset>
-          <p>All</p>
-          <p>Digital</p>
-          <p>Photography</p>
-        </fieldset>
-        <h4>Artists</h4>
-        <fieldset>
-          <p>Curated</p>
-          <p>Emerging</p>
-        </fieldset>
-      </section>
-    </main>
-    <!-- <footer>
-      <p>&copy; 2024 Artgal. All rights reserved.</p>
-    </footer> -->
+    <div id="app"></div>
+    <script src="./app.js" type="module"></script>
   </body>
 </html>
