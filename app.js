@@ -1,8 +1,7 @@
-import { Header } from "./components/header.js";
+import Header from "./components/header.js";
 
 export default function App() {
-    return
-    `<header id="main-header">${Header()}</header>
+  return `<header id="main-header">${Header()}</header>
         <main class="main-container">
       <h1>The Collection</h1>
       <p>
@@ -29,3 +28,5 @@ export default function App() {
     </footer> -->
 `
 }
+
+document.querySelector('#app').innerHTML = App();
