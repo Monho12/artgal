@@ -1,5 +1,5 @@
 export function Footer() {
-    return `
+    return /*html */`
     <link rel="stylesheet" href="./components/footer/footer.js.css">
     <footer class="footer">
         <div class="footer-left">
