@@ -8,18 +8,6 @@ body {
   padding: 0 50px;
 }
 
-.main-header {
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  justify-content: space-between;
-}
-
-.middle-section {
-  display: flex;
-  gap: 20px;
-}
 
 .main-container {
   display: flex;
