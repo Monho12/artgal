@@ -1,3 +1,4 @@
+import { Footer } from "./components/footer/footer.js";
 import Header from "./components/header.js";
 
 export default function App() {
@@ -23,9 +24,7 @@ export default function App() {
         </fieldset>
       </section>
     </main>
-    <!-- <footer>
-      <p>&copy; 2024 Artgal. All rights reserved.</p>
-    </footer> -->
+    ${Footer()}
 `
 }
 
