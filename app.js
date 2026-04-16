@@ -4,7 +4,7 @@ import Header from "./components/header/header.js";
 
 export default function App() {
   return /*html */`${Header()}
-        <main class="main-container">
+      <main class="main-container">
       <h1>The Collection</h1>
       <p>
         Explore our collection of artworks, connect with artists, and share your

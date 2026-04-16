@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artwork Detail</title>
+  </head>
+  <body>
+    <div id="detail"></div>
+
+    <script type="module">
+      import { artworks } from "../../pages/gallery/art.js";
+
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get("id"));
+
+      const art = artworks.find((a) => a.id === id);
+
+      document.getElementById("detail").innerHTML = art
+        ? `
+      <img src="${art.image}" alt="${art.title}">
+      <h1>${art.title}</h1>
+      <h3>${art.artist} — ${art.year}</h3>
+      <p>${art.description}</p>
+    `
+        : "<p>Artwork not found.</p>";
+    </script>
+  </body>
+</html>

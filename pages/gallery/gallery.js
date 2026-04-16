@@ -1,4 +1,4 @@
-import artCard from "./components/artCard/artCard.js";
+import artCard from "/components/artCard/artCard.js";
 
 const url = './art.json'
 
