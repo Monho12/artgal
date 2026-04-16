@@ -1,0 +1,10 @@
+img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+article {
+  border: 1px solid red;
+}
+
