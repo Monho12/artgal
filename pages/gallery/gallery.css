@@ -17,10 +17,8 @@ main {
   align-items: center;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px 0;
-  width: 100%;
+.miniGal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

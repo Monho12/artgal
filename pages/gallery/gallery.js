@@ -2,26 +2,19 @@ import miniArtCard from "/components/miniArtCard/miniArtCard.js";
 import Header from "/components/header/header.js";
 import { Footer } from "/components/footer/footer.js";
 
-const url = './art.json'
+document.getElementById("header").innerHTML = Header();
+document.getElementById("footer").innerHTML = Footer();
 
-function GalleryPage(data) {
-    return /*html*/`
-    ${Header()}
-    <main class="gallery-grid" id="gallery"></main>
-    ${Footer()}
-  `
-}
-
-fetch(url)
-    .then(response => response.json())
+fetch('./art.json')
+    .then(res => res.json())
     .then(data => {
-        document.body.innerHTML = GalleryPage(data);
+        document.getElementById("featured").innerHTML = miniArtCard(data[0]);
 
-        const gal = document.getElementById("gallery");
-        gal.innerHTML = data.map(art => miniArtCard(art)).join("");
+        document.getElementById("mini-gallery").innerHTML = data
+            .slice(1)
+            .map(art => miniArtCard(art))
+            .join("");
     })
     .catch(error => {
-        console.log("Error loading gallery:", error);
+        console.error("Error loading gallery:", error);
     });
-
-

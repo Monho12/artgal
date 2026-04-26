@@ -1,22 +1,30 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="/components/miniArtCard/miniArtCard.css" />
+  </head>
+  <body>
+    <!-- header component loads here -->
+    <div id="header"></div>
 
-  <link rel="stylesheet" href="./gallery.css" />
-  <script src="./gallery.js" type="module"></script>
-</head>
+    <!-- featured big card -->
+    <main id="featured"></main>
 
-<body>
+    <!-- mini gallery grid -->
+    <section>
+      <h3>Related Explorations</h3>
+      <div class="miniGal-container" id="mini-gallery"></div>
+    </section>
 
-  <main id="gallery"></main>
-  <section>
-    <h3>Related Explorations</h3>
-    <main class="miniGal-container" id="mini-gallery"></main>
-  </section>
-</body>
+    <!-- footer component loads here -->
+    <div id="footer"></div>
 
+    <script type="module" src="./gallery.js"></script>
+  </body>
 </html>
