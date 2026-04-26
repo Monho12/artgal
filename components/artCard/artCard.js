@@ -1,7 +1,7 @@
 export default function artCard({ title, artist, description, image, id }) {
   return /*html*/`
     <link rel="stylesheet" href="/components/artCard/artCard.css">
-    <article class="art-card" id="${id}" onclick="location.href='/pages/artDetail/artDetail.html?id=${id}'">
+    <article class="art-card" id="${id}">
         <img src="${image}" alt="${title}">
       <div class="art-info">
         <h5>Current Exhibition</h5>

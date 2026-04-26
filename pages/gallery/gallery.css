@@ -5,16 +5,10 @@ body {
   padding: 0 50px;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: beige;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
 main {
@@ -23,8 +17,10 @@ main {
   align-items: center;
 }
 
-.miniGal-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
 }

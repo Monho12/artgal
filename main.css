@@ -5,6 +5,26 @@
   font-family: 'Inter', sans-serif;
 }
 
+.arts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.back-btn:hover {
+  background: #e0e0e0;
+}
+
 
 
 body {
